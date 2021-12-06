@@ -1,4 +1,4 @@
-# LaunchDarkly Code References with GitHub Actions
+# TEST: LaunchDarkly Code References with GitHub Actions
 
 This GitHub Action is a utility that automatically populates code references in LaunchDarkly. This is useful for finding references to feature flags in your code, both for reference and for code cleanup.
 
@@ -22,7 +22,7 @@ jobs:
       with:
         fetch-depth: 11 # This value must be set if the lookback configuration option is not disabled for find-code-references. Read more: https://github.com/launchdarkly/ld-find-code-refs#searching-for-unused-flags-extinctions
     - name: LaunchDarkly Code References
-      uses: launchdarkly/find-code-references@v6.6.7
+      uses: launchdarkly/find-code-references@v6.6.8
       with:
         accessToken: ${{ secrets.LD_ACCESS_TOKEN }}
         projKey: YOUR_PROJECT_KEY
