@@ -22,7 +22,7 @@ jobs:
       with:
         fetch-depth: 11 # This value must be set if the lookback configuration option is not disabled for find-code-references. Read more: https://github.com/launchdarkly/ld-find-code-refs#searching-for-unused-flags-extinctions
     - name: LaunchDarkly Code References
-      uses: launchdarkly/find-code-references@v6.7.8
+      uses: launchdarkly/find-code-references@v6.8.0
       with:
         accessToken: ${{ secrets.LD_ACCESS_TOKEN }}
         projKey: YOUR_PROJECT_KEY
